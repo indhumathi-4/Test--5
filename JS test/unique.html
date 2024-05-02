@@ -8,7 +8,7 @@
 <body>
     <script>
         const a = [1,2,3,3,4,5,5]
-        const unique = a.filter(item=>a.unique(item));
+        const unique = [...new set(a)];
         console.log(unique);
     
     </script>
